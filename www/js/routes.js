@@ -20,6 +20,16 @@ app.config(function($stateProvider) {
       templateUrl: "templates/design.html",
       controller: "DesignCtrl"
     })
+    .state("appli.developpement", {
+      url: "/appli/developpement",
+      templateUrl: "templates/design.html",
+      controller: "DeveloppementCtrl"
+    })
+    .state("appli.communication", {
+      url: "/appli/communication",
+      templateUrl: "templates/design.html",
+      controller: "CommunicationCtrl"
+    })
     .state("appli.veille", {
       url: "/appli/veille",
       templateUrl: "templates/veille.html",
