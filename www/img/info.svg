@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.92 89.781">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c2c55;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-size: 51px;
+        font-family: SourceCodePro-Regular, Source Code Pro;
+      }
+    </style>
+  </defs>
+  <g id="info" transform="translate(0 0.342)">
+    <path id="Tracé_12" data-name="Tracé 12" class="cls-1" d="M2,23.571V66.114L39.46,87.478,76.92,66.114V23.571L39.46,2.3Z" transform="translate(0 -0.342)"/>
+    <path id="Tracé_13" data-name="Tracé 13" class="cls-2" d="M2,23.571V66.114L39.46,87.478,76.92,66.114V23.571L39.46,2.3Z" transform="translate(0 -0.342)"/>
+    <text id="_" data-name="?" class="cls-3" transform="translate(39 62.136)"><tspan x="-15.3" y="0">?</tspan></text>
+  </g>
+</svg>

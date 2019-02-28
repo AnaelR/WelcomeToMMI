@@ -23,3 +23,4 @@ app.run(function($ionicPlatform) {
 app.config(function($urlRouterProvider){
     $urlRouterProvider.otherwise('/');
 });
+
