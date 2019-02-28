@@ -1,15 +1,16 @@
 <header>
-
-    <h1 class="title_white">Département MMI</h1>
+  <h1 class="title_white">Département MMI</h1>
 </header>
 <div class="soushead">
-    <div class="first_aria"><p>Design</p></div>
-    <div class="scnd_aria unactive"></div>
+  <div class="first_aria">
+    <p>{{ titre }}</p>
+  </div>
+  <div class="scnd_aria unactive"></div>
 </div>
 <main>
-    <div class="centre">
-        <button class="carte" ui-sref="appli.veille">
-            Veille
-        </button>
-    </div>
+  <div class="centre">
+    <button ng-repeat="parent in liste" class="carte" ui-sref="appli.veille">
+      {{ parent.name }}
+    </button>
+  </div>
 </main>
