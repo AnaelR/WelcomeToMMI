@@ -2,23 +2,21 @@
   <h1 class="title_white">Département MMI</h1>
 </header>
 <div class="soushead">
-  <div class="first_aria">
-    <p>{{}}</p>
-  </div>
   <div class="scnd_aria active">
-    <p>{{}}</p>
+    <p>{{ categorie.name }}</p>
   </div>
 </div>
 <main>
   <div class="centre">
     <div ng-repeat="enfant in liste" class="item">
-        <a href="{{ enfant.excerpt.rendered }}" target="blank"></a>
-      <button class="sticker">
+      <a href="{{ enfant.excerpt.rendered }}" target="blank">
+        <button class="sticker">
           {{ enfant.title.rendered }}
-      </button></a>
+        </button>
+      </a>
     </div>
   </div>
-  <div class="info" ui-sref="appli.infoDesign">
+  <div class="info" ui-sref="appli.info({id: categorie.id})">
     <img src="../img/info.svg" alt="info" />
   </div>
 </main>

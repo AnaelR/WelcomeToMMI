@@ -35,9 +35,9 @@ app.config(function($stateProvider) {
       templateUrl: "templates/veille.html",
       controller: "EnfantCtrl"
     })
-    .state("appli.infoDesign", {
-      url: "/appli/infoDesign",
-      templateUrl: "templates/infoDesign.html",
-      controller: "InfoDesignCtrl"
+    .state("appli.info", {
+      url: "/appli/info/:id",
+      templateUrl: "templates/info.html",
+      controller: "InfoCtrl"
     });
 });

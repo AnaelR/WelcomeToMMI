@@ -26,4 +26,8 @@ app.service("ajaxService", function($http, $q, BACKEND) {
   this.getListeEnfant = function(id) {
     return this.ajax(BACKEND.enfant + id);
   };
+
+  this.getCategorie = function(id) {
+    return this.ajax(BACKEND.categorie + id);
+  };
 });
