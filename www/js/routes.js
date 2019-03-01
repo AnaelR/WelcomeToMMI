@@ -30,10 +30,10 @@ app.config(function($stateProvider) {
       templateUrl: "templates/design.html",
       controller: "CommunicationCtrl"
     })
-    .state("appli.veille", {
-      url: "/appli/veille",
+    .state("appli.article", {
+      url: "/appli/:id",
       templateUrl: "templates/veille.html",
-      controller: "VeilleCtrl"
+      controller: "EnfantCtrl"
     })
     .state("appli.infoDesign", {
       url: "/appli/infoDesign",

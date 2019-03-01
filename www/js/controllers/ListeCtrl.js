@@ -48,3 +48,22 @@ app.controller("CommunicationCtrl", function($scope, ajaxService) {
     }
   );
 });
+
+// Injection de $state en dépendance pour récupérer le paramètre id
+app.controller("EnfantCtrl", function($scope, ajaxService, $state) {
+  // Initialisation de la vidéo
+  $scope.enfant = "";
+
+  // Appel de la video par son id
+  $scope.liste = ajaxService.getListeEnfant($state.params.id).then(
+    // En cas de success
+    function(response) {
+      $scope.liste = response;
+      console.log(response);
+    },
+    // En cas d'erreur
+    function(error) {
+      alert("erreur Ajax");
+    }
+  );
+});

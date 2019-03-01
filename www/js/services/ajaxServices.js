@@ -22,4 +22,8 @@ app.service("ajaxService", function($http, $q, BACKEND) {
   this.getListeDesign = function(type) {
     return this.ajax(BACKEND.parent + type);
   };
+
+  this.getListeEnfant = function(id) {
+    return this.ajax(BACKEND.enfant + id);
+  };
 });

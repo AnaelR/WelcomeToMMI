@@ -9,7 +9,11 @@
 </div>
 <main>
   <div class="centre">
-    <button ng-repeat="parent in liste" class="carte" ui-sref="appli.veille">
+    <button
+      ng-repeat="parent in liste"
+      class="carte"
+      ui-sref="appli.article({id: parent.id})"
+    >
       {{ parent.name }}
     </button>
   </div>
