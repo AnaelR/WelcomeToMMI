@@ -11,12 +11,11 @@
 </div>
 <main>
   <div class="centre">
-    <div class="item">
-      <button ng-repeat="enfant in liste" class="sticker">
-        <a href="{{ enfant.excerpt.rendered }}" target="blank">
-          {{ enfant.title.rendered }}</a
-        >
-      </button>
+    <div ng-repeat="enfant in liste" class="item">
+        <a href="{{ enfant.excerpt.rendered }}" target="blank"></a>
+      <button class="sticker">
+          {{ enfant.title.rendered }}
+      </button></a>
     </div>
   </div>
   <div class="info" ui-sref="appli.infoDesign">
