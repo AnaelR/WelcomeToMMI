@@ -6,17 +6,17 @@
     <p>{{ categorie.name }}</p>
   </div>
 </div>
-<main>
-  <div class="centre">
-    <div ng-repeat="enfant in liste" class="item">
+<ion-scroll class="list" direction="y">
+  <main>
+    <div class="ligne" ng-repeat="enfant in liste">
       <a href="{{ enfant.excerpt.rendered }}" target="blank">
         <button class="sticker">
           {{ enfant.title.rendered }}
-        </button>
-      </a>
+        </button></a
+      >
     </div>
-  </div>
-  <div class="info" ui-sref="appli.info({id: categorie.id})">
-    <img src="../img/info.svg" alt="info" />
-  </div>
-</main>
+    <div class="info" ui-sref="appli.info({id: categorie.id})">
+      <img src="../img/info.svg" alt="info" />
+    </div>
+  </main>
+</ion-scroll>

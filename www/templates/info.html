@@ -7,11 +7,13 @@
   </div>
 </div>
 <main>
-  <div class="centre">
-    <h1 class="title">{{ categorie.name }}</h1>
-    <p>{{ categorie.description }}</p>
-  </div>
-  <div class="info" ui-sref="appli.article({id: categorie.id})">
-    <img src="../img/return.svg" alt="info" />
-  </div>
+  <ion-scroll class="list" direction="y">
+    <div class="centre">
+      <h1 class="title">{{ categorie.name }}</h1>
+      <p>{{ categorie.description }}</p>
+    </div>
+    <div class="info" ui-sref="appli.article({id: categorie.id})">
+      <img src="../img/return.svg" alt="info" />
+    </div>
+  </ion-scroll>
 </main>
