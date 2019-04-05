@@ -7,7 +7,7 @@ Les données sont récupérés via les flux Json de https://appmmi.anael-rodet.f
 
 CONSIGNE D'INSTALLATION DU WORDPRESS :
 
-Il suffit d'avfoir un WordPress Vanilla.
+Il suffit d'avoir un WordPress Vanilla.
 Les liens sont récupérés dans la partie "Extrait" de WordPress, il faut tout de même rajouter dans le code du thème WordPress la
 supression des balises <p></p> présentent dans le flux JSON par défaut.
 
